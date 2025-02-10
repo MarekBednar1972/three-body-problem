@@ -1,0 +1,21 @@
+{
+	"name": "three-body-gravity",
+	"version": "1.0.0",
+	"description": "3-body gravity simulation using Three.js",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "web-dev-server --node-resolve --open --watch",
+		"build": "tsc"
+	},
+	"dependencies": {
+		"three": "^0.160.0"
+	},
+	"devDependencies": {
+		"@types/three": "^0.160.0",
+		"typescript": "^5.2.2",
+		"vite": "^5.0.0",
+		"@web/dev-server": "^0.4.6"
+	}
+}
+
+

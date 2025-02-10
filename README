@@ -1,0 +1,116 @@
+# Three-Body Gravity Simulation
+
+A TypeScript implementation of the three-body problem using Three.js for visualization. This project simulates gravitational interactions between three bodies in 3D space, complete with trajectory visualization and real-time physics calculations. Written for a fun.
+
+## Features
+
+- Real-time 3D visualization using Three.js
+- Accurate gravitational physics calculations
+- Trajectory tracking for each body
+- Configurable simulation parameters
+- Responsive design
+- TypeScript for type safety
+
+## Prerequisites
+
+- Node.js (version 14 or higher)
+- npm or yarn
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone [your-repository-url]
+cd three-body-gravity
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+## Development
+
+Start the development server:
+```bash
+npm run dev
+```
+
+The application will be available at `http://localhost:8001`
+
+## Project Structure
+
+```
+three-body-gravity/
+├── package.json         # Project dependencies and scripts
+├── tsconfig.json       # TypeScript configuration
+├── index.html          # Main HTML file
+└── src/
+    ├── types.ts        # TypeScript interfaces and types
+    ├── config.ts       # Simulation configuration
+    ├── physics.ts      # Physics engine implementation
+    ├── renderer.ts     # Three.js rendering logic
+    └── index.ts        # Main application entry point
+```
+
+## Key Components
+
+### Physics Engine
+- Implements Newtonian gravity
+- Calculates forces between bodies
+- Updates positions and velocities
+- Handles collision avoidance
+
+### Renderer
+- Manages Three.js scene
+- Handles body visualization
+- Updates trajectories
+- Manages window resizing
+
+### Configuration
+- Gravitational constant
+- Time step
+- Initial body positions
+- Visual parameters
+
+## Configuration Options
+
+You can modify the simulation parameters in `src/config.ts`:
+
+```typescript
+export const SIMULATION_CONFIG: SimulationConfig = {
+  G: 0.1,              // Gravitational constant
+  dt: 0.016,           // Time step
+  maxTrajectoryPoints: 100  // Maximum trajectory points
+};
+```
+
+Initial body configurations:
+```typescript
+export const INITIAL_BODIES = [
+  {
+    mass: 1000,
+    position: new Vector3(-10, 0, 0),
+    velocity: new Vector3(0, 2, 0),
+    color: 0xff0000
+  },
+  // ... other bodies
+];
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a new Pull Request
+
+## License
+
+[Your chosen license]
+
+## Acknowledgments
+
+- Three.js for 3D rendering
+- TypeScript for type safety
