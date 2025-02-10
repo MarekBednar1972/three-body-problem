@@ -1,6 +1,6 @@
 # Three-Body Gravity Simulation
 
-A TypeScript implementation of the three-body problem using Three.js for visualization. This project simulates gravitational interactions between three bodies in 3D space, complete with trajectory visualization and real-time physics calculations. Written for a fun.
+A TypeScript implementation of the three-body problem using Three.js for visualization. This project simulates gravitational interactions between three bodies in 3D space, complete with trajectory visualization and real-time physics calculations.
 
 ## Features
 
@@ -36,7 +36,19 @@ Start the development server:
 npm run dev
 ```
 
-The application will be available at `http://localhost:8001`
+The application will be available at `http://localhost:5173`
+
+## Building for Production
+
+Build the project:
+```bash
+npm run build
+```
+
+Preview the production build:
+```bash
+npm run preview
+```
 
 ## Project Structure
 
@@ -88,11 +100,11 @@ export const SIMULATION_CONFIG: SimulationConfig = {
 Initial body configurations:
 ```typescript
 export const INITIAL_BODIES = [
-  {
+  { 
     mass: 1000,
     position: new Vector3(-10, 0, 0),
     velocity: new Vector3(0, 2, 0),
-    color: 0xff0000
+    color: 0xff0000 
   },
   // ... other bodies
 ];
@@ -114,3 +126,4 @@ export const INITIAL_BODIES = [
 
 - Three.js for 3D rendering
 - TypeScript for type safety
+- Vite for development and building
