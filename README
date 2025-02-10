@@ -2,11 +2,8 @@
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 [![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 
 A 3D visualization of the three-body gravitational problem, built with Three.js and TypeScript. Watch as three bodies interact through gravity in real-time, leaving colorful trails of their orbital paths.
-
-![Simulation Preview](preview.gif)
 
 ## ✨ Features
 
@@ -29,7 +26,7 @@ npm install
 npm run dev
 ```
 
-Visit `http://localhost:5173` to see the simulation in action.
+Visit `http://localhost:8001` to see the simulation in action.
 
 ## 🧱 Project Structure
 
@@ -92,4 +89,3 @@ MIT License - see the [LICENSE](LICENSE) file for details.
 
 - [Three.js](https://threejs.org/) for 3D rendering
 - [TypeScript](https://www.typescriptlang.org/) for type safety
-- [Vite](https://vitejs.dev/) for development tooling
